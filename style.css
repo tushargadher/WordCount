@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    height: 100vh;
+    /* background-image: linear-gradient(black,blue,black); */
+    /* background-color:#8E44AD; */
+    background-color: rgb(5, 5, 161);
+    display: grid;
+    place-items: center;
+}
+.inputContainer{
+    position: relative;
+    height: 65%;
+    width: 45%;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textWrap{
+    /* border: 2px solid black; */
+    width: 92%;
+    height: 75%;
+}
+textarea{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    border: none;
+    font-size: 1.6rem;
+}
+textarea:focus{
+    outline: none;
+}
+.counter{
+    bottom: -8%;
+    right: 13%;
+    height: 18%;
+    width: 75%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    border-radius: 5px;
+    /* visibility: hidden; */
+    color: white;
+}
+.wordCounter,.charCounter{
+  /* border :2px solid white; */
+  height: 80%;
+  width: 22%;
+  color: white;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+span
+{
+    display: grid;
+    place-items: center;
+}
+#show{
+    border: 2px solid;
+    position: absolute;
+    bottom: -20%;
+    left:40%;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    background: black;
+    color: white;
+}
+#Wvalue{
+    /* border: 2px solid white; */
+    font-size: 3.1rem;
+}
+#Cvalue{
+    /* border: 2px solid white; */
+    font-size: 3.1rem;
+}
+
+
+/* resonsive  */
+@media (max-width:1500px) {
+    html{
+        font-size: 55%;
+    }
+    .inputContainer{
+        
+        height: 55%;
+        width: 65%;
+    }
+    .wordCounter,.charCounter{
+        /* font-size: 1.2rem;     */
+        border: 2px solid white;
+        width: 40%;    
+      }   
+}
+@media (max-width:800px) {
+    html{
+        font-size: 45%;
+    }
+    .inputContainer{
+        
+        height: 55%;
+        width: 85%;
+    }
+    .wordCounter,.charCounter{
+        /* font-size: 1.2rem;     */
+        border: 2px solid white;
+        width: 40%;    
+      }   
+      #Wvalue,#Cvalue{
+        /* border: 2px solid white; */
+        font-size: 2.1rem;
+    }
+}
